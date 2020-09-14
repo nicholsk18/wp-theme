@@ -1,5 +1,2 @@
-<div class="container">
-    <?php
-        the_content();
-    ?>
-</div>
+<?php
+    the_content();

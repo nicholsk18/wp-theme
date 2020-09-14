@@ -1,5 +1,4 @@
 <?php
-$version = wp_get_theme()->get( 'Version' );
 
 function willcannon_theme_support() {
     // This adds dynamic title tag
@@ -22,6 +21,7 @@ function willcannon_menus() {
 add_action('init', 'willcannon_menus');
 
 function willcannon_register_styles() {
+    $version = wp_get_theme()->get( 'Version' );
 
     wp_enqueue_style('willcannon-style', get_template_directory_uri() . "/style.css", array('willcannon-bootstrap'), $version, 'all');
     wp_enqueue_style('willcannon-bootstrap', "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css", array(), '4.5.2', 'all');
