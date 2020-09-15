@@ -73,17 +73,15 @@
     <div class="container text-center py-5">
         <h3 class="tournament__stats-title pb-4">2020 Upcomming Events</h3>
 
-        <div class="calendar-box">
-            <?php
-            if ( have_posts() ) {
-                while( have_posts() ) {
-                    the_post();
+        <?php
+        if ( have_posts() ) {
+            while( have_posts() ) {
+                the_post();
 
-                    the_content();
-                }
+                the_content();
             }
-            ?>
-        </div>
+        }
+        ?>
     </div>
 </div>
 
