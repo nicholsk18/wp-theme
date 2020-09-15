@@ -71,7 +71,7 @@
     </div>
 
     <div class="container text-center py-5">
-        <h3 class="tournament__stats-title pb-4">2020 Upcomming Events</h3>
+        <h3 class="tournament__stats-title">2020 Upcomming Events</h3>
 
         <?php
         if ( have_posts() ) {
