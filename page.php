@@ -2,7 +2,7 @@
     get_header();
 ?>
 
-<div class="container">
+<div class="container page-body py-5">
     <h1><?php the_title(); ?></h1>
     <?php
         if ( have_posts() ) {

@@ -23,10 +23,10 @@ add_action('init', 'willcannon_menus');
 function willcannon_register_styles() {
     $version = wp_get_theme()->get( 'Version' );
 
-    wp_enqueue_style('willcannon-style', get_template_directory_uri() . "/style.css", array('willcannon-bootstrap'), $version, 'all');
     wp_enqueue_style('willcannon-bootstrap', "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css", array(), '4.5.2', 'all');
     wp_enqueue_style('willcannon-fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css", array(), '4.7.0', 'all');
-    wp_enqueue_style('willcannon-font', "https://fonts.googleapis.com/css?family=Courgette&family=Roboto+Slab&display=swap", array(), '1.0', 'all');
+    wp_enqueue_style('willcannon-font', "https://fonts.googleapis.com/css?family=Courgette&display=swap", array(), '1.0', 'all');
+    wp_enqueue_style('willcannon-style', get_template_directory_uri() . "/style.min.css", array('willcannon-bootstrap', 'willcannon-font'), $version, 'all');
 }
 
 add_action( 'wp_enqueue_scripts', 'willcannon_register_styles' );
