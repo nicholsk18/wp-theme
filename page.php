@@ -9,8 +9,7 @@
             while( have_posts() ) {
                 the_post();
                 
-                get_template_part( 'template-parts/content', 'header');
-                get_template_part( 'template-parts/content', 'body');
+                get_template_part( 'template-parts/content', 'page');
             }
         }
     ?>
