@@ -36,6 +36,10 @@ body {
   color: rgba(255,255,255,.75);
 }
 
+.screen-reader-response {
+  display: none;
+}
+
 /* MAIN STYLES */
 a:hover {
   text-decoration: none;
