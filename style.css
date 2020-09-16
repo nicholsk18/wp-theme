@@ -49,6 +49,9 @@ a:hover {
   background-color: #3e6800;
   color: #fff;
 }
+.btn-green:hover {
+  color: #fff;
+}
 .page-body {
   flex-grow: 1;
 }
@@ -95,6 +98,9 @@ img {
   -o-background-size: cover;
   -webkit-background-size: cover;
   background-size: cover;
+}
+#schedule {
+  overflow: hidden;
 }
 .tournament__title {
   color: #fff;
