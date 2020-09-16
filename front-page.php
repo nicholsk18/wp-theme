@@ -42,18 +42,18 @@ $golf_data = get_stats_data();
         </div>
     </div>
 
+    <!-- twitter insta feed -->
+    <div class="container py-5">
+        <?php
+        if ( have_posts() ) {
+            while( have_posts() ) {
+                the_post();
+                the_content();
+            }
+        }
+        ?>
+    </div>
 </div>
-<!-- content -->
-<!--<div class="container page-body">-->
-<!--    --><?php
-//        if ( have_posts() ) {
-//            while( have_posts() ) {
-//                the_post();
-//                the_content();
-//            }
-//        }
-//    ?>
-<!--</div>-->
 
 <?php
     get_footer();
